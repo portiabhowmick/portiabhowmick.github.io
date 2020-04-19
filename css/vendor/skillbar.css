@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.skills{
+    margin: 60px auto;
+    width: 500px;
+}
+.skills li{
+    margin: 20px 0;
+    list-style: none;
+}
+.skills h4{
+    text-align: center;
+    font-size: 40px;
+}
+.bar{
+    background: #353b48;
+    height: 4px;
+    display: block;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    overflow: hidden;
+    border-radius: 3px;
+}
+.bar span{
+    height:4px;
+    background: linear-gradient(90deg,#f0027f,#75489f,#fff);;
+    float: left;
+
+}
+.PHOTOSHOP{
+    width: 80%;
+    animation:PHOTOSHOP 3s infinite;
+}
+.HTML{
+    width: 80%;
+    animation:HTML 3s infinite;
+}
+.CSS{
+    width: 70%;
+    animation:CSS 3s infinite;
+}
+.JS{
+    width: 55%;
+    animation:JS 3s infinite;
+}
+.JQUERY{
+    width: 60%;
+    animation:JQUERY 3s infinite;
+}
+.BOOTSTRAP{
+    width: 75%;
+    animation:BOOTSTRAP 3s infinite;
+}
+.WORDPRESS{
+    width: 65%;
+    animation:WORDPRESS 3s infinite;
+}
+@keyframes PHOTOSHOP{
+    0%{width:0%;}
+    100%{width:80%;}
+}
+@keyframes HTML{
+    0%{width:0%;}
+    100%{width:80%;}
+}
+@keyframes CSS{
+    0%{width:0%;}
+    100%{width:70%;}
+}
+
+@keyframes JS{
+    0%{width:0%;}
+    100%{width:55%;}
+}
+
+@keyframes JQUERY{
+    0%{width:0%;}
+    100%{width:60%;}
+}
+
+@keyframes BOOTSTRAP{
+    0%{width:0%;}
+    100%{width:75%;}
+}
+@keyframes WORDPRESS{
+    0%{width:0%;}
+    100%{width:65%;}
+}
+
