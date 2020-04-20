@@ -143,7 +143,7 @@ body {
 }
 
 .typed-cursor {
-    color: rgb(250, 241, 241);
+    color: rgb(230, 0, 0);
 }
 
 /* particles */
@@ -309,6 +309,7 @@ navbar sticky .menu {
     font-size: 30px;
     padding: 20px;
     margin-top: 124px;
+    margin-left: 160px;
 }
 
 /* contactus */
@@ -417,6 +418,8 @@ footer p {
 @media (max-width: 575.98px) {
     .header_content {
         font-size: 35px !important;
+        left: 0;
+        padding-left: 20px;
     }
 
     .type {
@@ -425,18 +428,24 @@ footer p {
 
     .container .columns.five {
         width: 100% !important;
+
+    }
+
+    .contactme {
+        margin-left: 0;
     }
 
     .container .columns.seven {
-        width: 150% !important;
+        width: 100% !important;
     }
 
     .form-control {
-        width: 400px;
+        width: 300px;
     }
 
     .para p {
         text-align: center;
+        margin-left: 0;
     }
 
 }
@@ -456,7 +465,7 @@ footer p {
     }
 
     .container .columns.seven {
-        width: 150% !important;
+        width: 100% !important;
     }
 
     .form-control {
@@ -465,6 +474,7 @@ footer p {
 
     .para p {
         text-align: center;
+        margin-left: 0;
     }
 }
 
@@ -485,6 +495,7 @@ footer p {
 
     .para p {
         text-align: center;
+        margin-left: 0;
     }
 }
 
