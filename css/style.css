@@ -24,6 +24,7 @@ body {
     font: 100%/1.5em;
     font-family: sans-serif;
 }
+
 .container {
     width: 1920px;
     margin: 0 auto;
@@ -445,6 +446,15 @@ footer p {
     .para p {
         text-align: center;
         margin-left: 0;
+    }
+
+    .skills h4 {
+        margin-left: -98px;
+    }
+
+    .skills li {
+        width: 353px;
+        padding-left: 59px;
     }
 
 }
