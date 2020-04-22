@@ -37,37 +37,37 @@
 
 .PHOTOSHOP {
     width: 80%;
-    animation: PHOTOSHOP 8s;
+    animation: PHOTOSHOP 9s infinite;
 }
 
 .HTML {
     width: 80%;
-    animation: HTML 8s;
+    animation: HTML 9s infinite;
 }
 
 .CSS {
     width: 70%;
-    animation: CSS 8s;
+    animation: CSS 9s infinite;
 }
 
 .JS {
     width: 55%;
-    animation: JS 8s;
+    animation: JS 9s infinite;
 }
 
 .JQUERY {
     width: 60%;
-    animation: JQUERY 8s;
+    animation: JQUERY 9s infinite;
 }
 
 .BOOTSTRAP {
     width: 75%;
-    animation: BOOTSTRAP 8s;
+    animation: BOOTSTRAP 9s infinite;
 }
 
 .WORDPRESS {
     width: 65%;
-    animation: WORDPRESS 8s;
+    animation: WORDPRESS 9s infinite;
 }
 
 @keyframes PHOTOSHOP {
