@@ -22,22 +22,25 @@
             <div class="rowone-holder">
                 <div class="wave"></div>
                 <div class="container" id="home">
-                    <div class="rowone cleardiv"> 
+                    <div class="rowone cleardiv">
                         <div class="columns three rowoneleft">
                             <div class="headerlogo">
                                 <img src="img/logo.png">
 
                             </div>
-
                         </div>
                         <div class="columns nine rowoneright">
+                            <i class="fa fa-bars fa-lg show-menu-btn"></i>
                             <div class="navbar menu">
                                 <ul>
                                     <li><a class="scrollTo" href="#contact">CONTACT ME</a></li>
-                                    <li><a href="#">DOWNLOAD RESUME</a></li>
+                                    <li><a href="PORTIA BHOWMICK-RESUME.docx">DOWNLOAD RESUME</a></li>
                                     <li><a class="scrollTo" href="">WEB DESIGN</a></li>
                                     <li><a class="scrollTo" href="#whoiam">WHO I AM</a></li>
                                     <li><a class="scrollTo" href="#home">HOME</a></li>
+                                    <!-- <label for="chk" class="hide-menu-btn">
+                                        <i class="fa fa-window-close"></i>
+                                    </label> -->
                                 </ul>
                             </div>
 
@@ -51,7 +54,7 @@
                     <div class="rowtwo cleardiv">
                         <div class="header_content">
                             <p>Hello.</p>
-				<p>I'm Portia Bhowmick,</br> <span class="type"
+                            <p>I'm Portia Bhowmick,</br> <span class="type"
                                     style="color: rgb(230, 0, 0);font-size: 40px;"></span></P>
                             <P>living in kolkata,India.</p>
                         </div>
@@ -106,10 +109,11 @@
                 </div>
                 <div class="columns seven rowoneright">
                     <div class="button">
-                        <p class="downloadresume btn"><a href="#">DOWNLOAD MY RESUME</a></p>
+                        <p class="downloadresume btn"><a href="PORTIA BHOWMICK-RESUME.docx">DOWNLOAD MY RESUME</a></p>
                     </div>
                     <div class="button">
-                        <p class="downloadresume btn"><a href="https://www.linkedin.com/in/portia-bhowmick-b76769197/"target="_blank">MY LINKEDIN PROFILE</a></p>
+                        <p class="downloadresume btn"><a href="https://www.linkedin.com/in/portia-bhowmick-b76769197/"
+                                target="_blank">MY LINKEDIN PROFILE</a></p>
                     </div>
                 </div>
             </div>
@@ -124,17 +128,19 @@
                     <div class="columns five rowoneleft">
                         <ul class="contactme">
                             <li>
-                                <span><i class="fa fa-address-book"aria-hidden="true"></i>West Bengal(kolkata),India</span>
+                                <span><i class="fa fa-address-book" aria-hidden="true"></i>West
+                                    Bengal(kolkata),India</span>
                             </li>
                             <li>
                                 <span><i class="fa fa-phone-square" aria-hidden="true"></i>+91 XXXXXXXXXX</span>
                             </li>
                             <li>
-                                <span><i class="fa fa-envelope-square"aria-hidden="true"></i>portiabhowmick@gmail.com</span>
+                                <span><i class="fa fa-envelope-square"
+                                        aria-hidden="true"></i>portiabhowmick@gmail.com</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="columns seven rowoneleft">
+                    <div class="columns seven rowoneright">
                         <div class="form">
                             <form>
                                 <input type="text" name="text" class="form-control" placeholder="Enter Your Name"
@@ -160,7 +166,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="js/vendor/jquery-3.4.1.min.js"></script>
     <script src="js/vendor/jquery.scrollUp.min.js"></script>
     <script src="js/vendor/particles.js"></script>
@@ -171,13 +177,14 @@
 
     <script>
         var preloader = document.getElementById('loading');
+
         function myFunction() {
             preloader.style.display = "none";
         }
         $(function () {
             $.scrollUp()
-  
-    });
+
+        });
         var typed = new Typed('.type', {
             strings: [
                 'Web Designer,',
@@ -189,36 +196,41 @@
             loop: true
         });
 
-    $('.scrollTo').click(function() {
-    // this is a getter variable.
-    // We're getting the current value of the href attribute of each element with a class "scrollTo".
-    var getElem = $(this).attr('href');
-    // This is a variable containing an integer value.
-    var targetDistance = -140;
-    // Checking If the element exists on the page or not.
-    if ($(getElem).length) {
-        // getting the top offset of the targetted element.
-        var getOffset = $(getElem).offset().top;
-        // Now We can animate to our desired section using the html element.
-        $('html').animate({
-            scrollTop:getOffset - targetDistance
-        },500);
-    }
-    // returning false performs three tasks when called:
-    // event.preventDefault();
-    // event.stopPropagation();
-    // Stops callback execution and returns immediately when called.
-    return false;
-});
-    var amountScrolled = 100;
-    $(window).scroll(function() {
-	if ( $(window).scrollTop() > amountScrolled ) {
-		$('.menu').addClass('menu-sticky');
-	} else {
-		$('.menu').removeClass('menu-sticky');
-	}
-});
+        $('.scrollTo').click(function () {
+            // this is a getter variable.
+            // We're getting the current value of the href attribute of each element with a class "scrollTo".
+            var getElem = $(this).attr('href');
+            // This is a variable containing an integer value.
+            var targetDistance = -140;
+            // Checking If the element exists on the page or not.
+            if ($(getElem).length) {
+                // getting the top offset of the targetted element.
+                var getOffset = $(getElem).offset().top;
+                // Now We can animate to our desired section using the html element.
+                $('html').animate({
+                    scrollTop: getOffset - targetDistance
+                }, 500);
+            }
+            // returning false performs three tasks when called:
+            // event.preventDefault();
+            // event.stopPropagation();
+            // Stops callback execution and returns immediately when called.
+            return false;
+        });
+        var amountScrolled = 100;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > amountScrolled) {
+                $('.menu').addClass('menu-sticky');
+            } else {
+                $('.menu').removeClass('menu-sticky');
+            }
+        });
+        $(document).ready(function () {
+            $('.show-menu-btn').click(function () {
+                $('.navbar').toggleClass('active');
+            })
 
+        });
     </script>
 </body>
 
