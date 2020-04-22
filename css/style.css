@@ -190,7 +190,7 @@ body {
     width: 50%;
 }
 
-navbar sticky .menu {
+.navbar sticky .menu {
     position: relative;
 }
 
@@ -199,7 +199,7 @@ navbar sticky .menu {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(2, 0, 0, 0.7);
+    background: rgba(2, 0, 0, 0.9);
     margin: 0;
     width: 100%;
     height: 50px;
@@ -215,6 +215,36 @@ navbar sticky .menu {
     margin-top: 10px;
     margin-right: 17px;
     font-size: 16px;
+}
+
+/* 
+.hide-menu-btn {
+    text-align: center;
+    float: right;
+    padding-right: 420px;
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    display: none;
+} */
+
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: rgb(129, 73, 125);
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.show-menu-btn {
+    position: fixed;
+    float: right;
+    padding-right: 30px;
+    padding-top: 50px;
+    color: rgb(247, 133, 196);
+    z-index: 10001;
+    right: 10px;
+    visibility: hidden;
 }
 
 /* header */
@@ -457,6 +487,95 @@ footer p {
         padding-left: 59px;
     }
 
+    .show-menu-btn {
+        visibility: visible;
+    }
+
+    .navbar {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+        /* visibility: hidden; */
+    }
+
+    .navbar.active {
+        left: 0;
+
+    }
+
+    .navbar ul {
+        padding-top: 30px;
+    }
+
+    .navbar ul li,
+    .navbar ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul li a:hover::after {
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .menu-sticky {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+    }
+
+    .menu-sticky.active {
+        left: 0;
+    }
+
+    .menu-sticky ul {
+        padding-top: 30px;
+    }
+
+    .menu-sticky ul li,
+    .menu-sticky ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+
+
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -485,6 +604,94 @@ footer p {
         text-align: center;
         margin-left: 0;
     }
+
+    .show-menu-btn {
+        visibility: visible;
+    }
+
+    .navbar {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+        /* visibility: hidden; */
+    }
+
+    .navbar.active {
+        left: 0;
+
+    }
+
+    .navbar ul {
+        padding-top: 30px;
+    }
+
+    .navbar ul li,
+    .navbar ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul li a:hover::after {
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .menu-sticky {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+    }
+
+    .menu-sticky.active {
+        left: 0;
+    }
+
+    .menu-sticky ul {
+        padding-top: 30px;
+    }
+
+    .menu-sticky ul li,
+    .menu-sticky ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -506,6 +713,95 @@ footer p {
         text-align: center;
         margin-left: 0;
     }
+
+    .show-menu-btn {
+        visibility: visible;
+    }
+
+    .navbar {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+        /* visibility: hidden; */
+    }
+
+    .navbar.active {
+        left: 0;
+
+    }
+
+    .navbar ul {
+        padding-top: 30px;
+    }
+
+    .navbar ul li,
+    .navbar ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul li a:hover::after {
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .menu-sticky {
+        position: fixed;
+        text-decoration: none;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        margin-top: 40px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        background: rgba(2, 0, 0, 0.9);
+        z-index: 9999;
+        top: -40px;
+        left: 100%;
+        transition: 0.6s;
+    }
+
+    .menu-sticky.active {
+        left: 0;
+    }
+
+    .menu-sticky ul {
+        padding-top: 30px;
+    }
+
+    .menu-sticky ul li,
+    .menu-sticky ul li a {
+        text-decoration: none;
+        list-style: none;
+        float: none;
+        margin-top: 50px;
+        margin-right: 17px;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+
+
 }
 
 /* // Large devices (desktops, 992px and up) */
