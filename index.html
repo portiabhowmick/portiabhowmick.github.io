@@ -176,15 +176,20 @@
 
 
     <script>
+        // preloader
         var preloader = document.getElementById('loading');
 
         function myFunction() {
             preloader.style.display = "none";
         }
+
+        // Scoll to top
         $(function () {
             $.scrollUp()
 
         });
+
+        // Typing Text
         var typed = new Typed('.type', {
             strings: [
                 'Web Designer,',
@@ -196,6 +201,7 @@
             loop: true
         });
 
+        // sticky navmenu
         $('.scrollTo').click(function () {
             // this is a getter variable.
             // We're getting the current value of the href attribute of each element with a class "scrollTo".
@@ -225,6 +231,8 @@
                 $('.menu').removeClass('menu-sticky');
             }
         });
+
+        // Responsive submenu
         $(document).ready(function () {
             $('.show-menu-btn').click(function () {
                 $('.navbar').toggleClass('active');
