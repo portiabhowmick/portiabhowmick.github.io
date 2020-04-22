@@ -29,7 +29,7 @@
 
 .bar span {
     height: 4px;
-    background: linear-gradient(45deg, #f0027f, #75489f, #fff);
+    background: linear-gradient(45deg, #9e4f79, #75489f, rgb(230, 139, 225));
     ;
     float: left;
 
