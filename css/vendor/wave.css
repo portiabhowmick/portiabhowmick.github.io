@@ -2,7 +2,7 @@ section{
     width:100%;
     height: 650px;
     position: relative;
-    background:linear-gradient(-45deg,#9e4f79, #75489f, rgb(230, 139, 225));
+    background:linear-gradient(-45deg,rgb(230, 139, 225), #75489f, rgb(230, 139, 225));
 
 }
 section .wave{
